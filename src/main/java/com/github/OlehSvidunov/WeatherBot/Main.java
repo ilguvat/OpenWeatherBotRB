@@ -12,7 +12,7 @@ public class Main {
         TelegramBotsApi telegramBotsApi = new TelegramBotsApi();
 
         try {
-            telegramBotsApi.registerBot(new WeatherBot());
+            telegramBotsApi.registerBot(new OpenWeatherBotRB());
         } catch (TelegramApiException e) {
             e.printStackTrace();
         }
